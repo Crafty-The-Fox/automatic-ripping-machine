@@ -48,6 +48,8 @@ class Config(db.Model):
     HB_PRESET_BD = db.Column(db.String(256))
     DEST_EXT = db.Column(db.String(10))
     HANDBRAKE_CLI = db.Column(db.String(25))
+    FFMPEG_CLI = db.Column(db.String(25))
+    USE_FFMPEG = db.Column(db.Boolean)
     MAINFEATURE = db.Column(db.Boolean)
     HB_ARGS_DVD = db.Column(db.String(256))
     HB_ARGS_BD = db.Column(db.String(256))
