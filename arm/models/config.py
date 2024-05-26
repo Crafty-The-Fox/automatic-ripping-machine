@@ -50,6 +50,7 @@ class Config(db.Model):
     HANDBRAKE_CLI = db.Column(db.String(256))
     FFMPEG_CLI = db.Column(db.String(256))
     USE_FFMPEG = db.Column(db.Boolean)
+    FFMPEG_ARGS = db.Column(db.String(512))
     MAINFEATURE = db.Column(db.Boolean)
     HB_ARGS_DVD = db.Column(db.String(256))
     HB_ARGS_BD = db.Column(db.String(256))
