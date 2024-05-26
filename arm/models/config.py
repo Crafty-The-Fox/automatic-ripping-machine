@@ -49,6 +49,7 @@ class Config(db.Model):
     DEST_EXT = db.Column(db.String(10))
     HANDBRAKE_CLI = db.Column(db.String(256))
     FFMPEG_CLI = db.Column(db.String(256))
+    FFMPEG_LOCAL = db.Column(db.String(256))
     USE_FFMPEG = db.Column(db.Boolean)
     FFMPEG_ARGS = db.Column(db.String(512))
     MAINFEATURE = db.Column(db.Boolean)
